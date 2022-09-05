@@ -11,7 +11,7 @@ cabal-version:      3.0
 --   http://haskell.org/cabal/users-guide/
 --
 -- The name of the package.
-name:               save-helpers
+name:               save-helper
 
 -- The package version.
 -- See the Haskell package versioning policy (PVP) for standards
@@ -58,7 +58,7 @@ library
     import:           warnings
 
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  Helper
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -95,9 +95,9 @@ test-suite save-helpers-test
     hs-source-dirs:   test
 
     -- The entrypoint to the test suite.
-    main-is:          Main.hs
+    main-is:          Helper.hs
 
     -- Test dependencies.
     build-depends:
         base ^>=4.15.1.0,
-        save-helpers
+        save-helper

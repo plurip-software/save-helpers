@@ -99,5 +99,5 @@ test-suite save-helpers-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.15.1.0,
+        base, 
         save-helper
